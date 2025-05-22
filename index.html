@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivainesu Dondo - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #34495E; /* Dark blue-gray for body */
+            color: #ECF0F1; /* Light gray for general text */
+        }
+
+        /* Custom styles for the modern professional palette */
+        .bg-custom {
+            background-color: #2C3E50; /* Darker blue-gray for header/footer */
+        }
+        .text-custom {
+            color: #2C3E50;
+        }
+        .bg-tech {
+            background-color: #1D3557; /* Darker blue for technical skills sections */
+        }
+        .nav-link {
+            color: #ECF0F1; /* Default link color */
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ff007f; /* Bright pink on hover */
+            text-decoration: none;
+        }
+        .btn-primary {
+            background-color: #ff007f; /* Bright pink button */
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: inline-block; /* Ensure padding works correctly */
+            text-align: center; /* Center text if needed */
+        }
+        .btn-primary:hover {
+            background-color: #e60073; /* Darker pink on hover */
+        }
+        .experience-box {
+            background-color: #ff007f; /* Bright pink for the "Student Developer" tag */
+            color: white;
+            padding: 8px 18px;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 5px;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .section-heading {
+            font-size: 2.25rem; /* Larger heading size */
+            font-weight: 700; /* Bold heading */
+            color: #ECF0F1; /* Light gray for headings */
+            border-bottom: 3px solid #ff007f; /* Thicker pink underline */
+            display: inline-block;
+            padding-bottom: 8px;
+            margin-bottom: 2rem; /* More space below heading */
+            text-align: center;
+            width: 100%; /* Ensure border spans correctly if centered */
+        }
+        .intro-card {
+            background-color: #2C3E50; /* Darker background for intro card */
+            padding: 2.5rem; /* Increased padding */
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+            margin-top: 2rem; /* Space from header */
+        }
+        .project-item {
+            background-color: #2C3E50; /* Background for project items */
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem; /* Space between projects */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .skill-list li {
+            padding: 0.25rem 0; /* Vertical spacing for list items */
+            display: flex; /* Use flexbox for icon and text alignment */
+            align-items: center; /* Center items vertically */
+        }
+        .skill-list li i {
+            margin-right: 0.75rem; /* Space between icon and text */
+            color: #ff007f; /* Icon color */
+            font-size: 1.25rem; /* Icon size */
+        }
+        /* Active nav link style */
+        .nav-link.active {
+            color: #ff007f;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-body text-body">
+
+    <header class="bg-custom text-white p-5 shadow-lg">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-4xl font-bold mb-4 sm:mb-0">Hi, I'm Ivainesu Dondo!</h1>
+            <nav>
+                <ul class="flex flex-wrap justify-center sm:space-x-6 space-x-3">
+                    <li><a href="#home" class="nav-link text-lg">Home</a></li>
+                    <li><a href="#about" class="nav-link text-lg">About</a></li>
+                    <li><a href="#expertise" class="nav-link text-lg">Expertise</a></li>
+                    <li><a href="#projects" class="nav-link text-lg">Projects</a></li>
+                    <li><a href="#technical-skills" class="nav-link text-lg">Skills</a></li>
+                    <li><a href="#contact" class="nav-link text-lg">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="home" class="py-0"></section>
+
+        <section id="about" class="intro-card">
+            <h2 class="section-heading mx-auto w-fit">ABOUT ME</h2>
+            <div class="text-center mb-6">
+                <img src="c:\Users\Dell\OneDrive\Pictures\IMG-20250308-WA0076.jpg" alt="Ivainesu Dondo" class="mx-auto rounded-full w-48 h-48 object-cover border-4 border-pink-500 shadow-lg">
+                <div class="experience-box mt-6">Student Developer</div>
+            </div>
+            <p class="mt-8 text-lg leading-relaxed text-center">
+                A passionate Computer Science student at Midlands State University dedicated to leveraging technology to solve real-world problems. My mission is to create innovative solutions that enhance user experiences and drive efficiency in technology.
+            </p>
+            <p class="mt-4 text-lg leading-relaxed text-center">
+                With a strong foundation in web development, programming, and database management, I am excited to share my experiences with you. I have a strong passion for technology and innovation. I enjoy reading novels and engaging in outdoor activities like mountain climbing. I consider myself a quick thinker and problem-solver, always eager to apply my skills to real-world challenges.
+            </p>
+            <p class="mt-4 text-lg leading-relaxed text-center">
+                If you're looking for a dedicated and creative team member, feel free to connect with me!
+            </p>
+        </section>
+
+        <section id="expertise" class="py-12">
+            <h2 class="section-heading mx-auto w-fit">EXPERTISE</h2>
+            <div class="bg-tech p-8 rounded-lg shadow-xl max-w-2xl mx-auto">
+                <ul class="list-none space-y-3 text-lg skill-list">
+                    <li><i class="fas fa-globe"></i> Web Development (HTML, CSS, JavaScript, Responsive Design)</li>
+                    <li><i class="fas fa-code"></i> Object-Oriented Programming (Java, Python)</li>
+                    <li><i class="fas fa-database"></i> Database Management (MySQL, SQLite)</li>
+                    <li><i class="fas fa-code-branch"></i> Version Control (Git, GitHub)</li>
+                    <li><i class="fas fa-lightbulb"></i> Problem Solving and Algorithm Development</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="py-12">
+            <h2 class="section-heading mx-auto w-fit">MY PROJECTS</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="project-item">
+                    <h3 class="text-2xl font-semibold text-pink-400 mb-2">1. Adaptive Security Suite (In Progress)</h3>
+                    <p class="text-lg leading-relaxed">
+                        Designed to combat evolving cyber threats through advanced user authentication, robust data encryption, real-time network threat detection, and adaptive security mechanisms.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3 class="text-2xl font-semibold text-pink-400 mb-2">2. AI-Powered Threat Detection System (Planned)</h3>
+                    <p class="text-lg leading-relaxed">
+                        An AI-driven tool that analyzes network traffic and detects anomalies that may indicate potential cyber threats, leveraging machine learning for predictive security.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technical-skills" class="py-12">
+            <h2 class="section-heading mx-auto w-fit">TECHNICAL SKILLS</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
+                <div class="bg-tech p-6 rounded-lg shadow-xl">
+                    <h3 class="font-semibold text-2xl text-white mb-4 text-center">Programming Languages</h3>
+                    <ul class="list-none space-y-2 skill-list text-lg">
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                    </ul>
+                </div>
+
+                <div class="bg-tech p-6 rounded-lg shadow-xl">
+                    <h3 class="font-semibold text-2xl text-white mb-4 text-center">Tools & Technologies</h3>
+                    <ul class="list-none space-y-2 skill-list text-lg">
+                        <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                        <li><i class="fas fa-code"></i> Visual Studio Code</li>
+                        <li><i class="fas fa-database"></i> MySQL & SQLite</li>
+                        <li><i class="fab fa-linux"></i> Kali Linux</li>
+                        <li><i class="fas fa-mobile-alt"></i> Responsive Web Design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12 text-center">
+            <h2 class="section-heading mx-auto w-fit">CONTACT</h2>
+            <div class="max-w-2xl mx-auto text-lg space-y-3">
+                <p>Email: <a href="mailto:ivainesudondo@gmail.com" class="text-pink-400 hover:underline transition-colors duration-300">ivainesudondo@gmail.com</a></p>
+                <p>Phone: <span class="text-white">+263 773 309 234</span></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ivainesu-dondo" class="text-pink-400 hover:underline transition-colors duration-300" target="_blank" rel="noopener noreferrer">Visit My LinkedIn Profile</a></p>
+                <p>GitHub: <a href="https://github.com/ivie-lynn" class="text-pink-400 hover:underline transition-colors duration-300" target="_blank" rel="noopener noreferrer">ivie-lynn</a></p>    
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-custom text-white p-5 text-center mt-8 shadow-inner">
+        <p>&copy; <span id="current-year"></span> Ivainesu Dondo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearSpan = document.getElementById('current-year');
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const headerHeight = document.querySelector('header').offsetHeight;
+
+            const observerOptions = {
+                root: null,
+                rootMargin: `-${headerHeight}px 0px 0px 0px`, // Offset for fixed header
+                threshold: 0.3 // Percentage of section visible to trigger
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        const id = entry.target.getAttribute('id');
+                        const correspondingLink = document.querySelector(`nav ul li a[href="#${id}"]`);
+                        if (correspondingLink) {
+                            correspondingLink.classList.add('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections, including the new #home section
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    navLinks.forEach(nav => nav.classList.remove('active')); // Remove active from all
+                    this.classList.add('active'); // Add active to clicked
+
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+
+                    // For the "Home" link, scroll to the very top of the page.
+                    // For other links, scroll to the section adjusted by header height.
+                    if (targetId === "#home") {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    } else if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - headerHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Set initial active link based on URL hash if present
+            if (window.location.hash) {
+                const initialTarget = document.querySelector(`nav ul li a[href="${window.location.hash}"]`);
+                if (initialTarget) {
+                    initialTarget.classList.add('active');
+                }
+            } else {
+                // Default to 'Home' or 'About' if no hash, depending on preference
+                document.querySelector('nav ul li a[href="#home"]').classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>
